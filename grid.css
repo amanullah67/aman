@@ -1,0 +1,31 @@
+#grid-container{
+    height: 750px;
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: 10% 10% auto auto 10%;
+    gap: 10px;
+}
+header,nav,footer{
+    grid-column: 1/3;
+}
+header,footer{
+    background-color: blue;
+    color: yellow;
+}
+
+nav{
+    background-color: green;
+}
+aside{
+    background-color: gold;
+    grid-row: 3/5;
+}
+article{
+    background-color: purple;
+}
+article, section{
+    grid-column: 2/3;
+}
+section{
+    background-color: red;
+}
